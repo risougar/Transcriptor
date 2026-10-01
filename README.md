@@ -122,7 +122,7 @@ y se consiguió que el notebook pudiera utilizarlo.
 
 La solución utilizada durante las pruebas fue modificar temporalmente el `PATH` desde Python.
 
-Por tanto, al quedar correctamente configurado `ffmpeg.exe` dentro del entorno,  el proyecto **no depende de mantener una copia manual de FFmpeg dentro de la carpeta del proyecto**.
+Al quedar correctamente configurado `ffmpeg.exe` dentro del entorno,  el proyecto **no depende de mantener una copia manual de FFmpeg dentro de la carpeta del proyecto**.
 
 ---
 

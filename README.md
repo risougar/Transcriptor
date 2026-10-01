@@ -9,7 +9,7 @@ Actualmente el proyecto permite:
 * Cargar el modelo `medium` de Whisper.
 * Utilizar la GPU AMD Radeon RX 7900 XT mediante PyTorch/ROCm.
 * Detectar automáticamente los archivos de audio almacenados en una carpeta.
-* Procesar varios audios mediante un flujo batch.
+* Procesar varios audios.
 * Transcribir los audios en español.
 * Guardar automáticamente cada transcripción como archivo `.txt`.
 * Mantener separados los archivos de entrada (`audios/`) y las transcripciones generadas (`transcripciones/`).

@@ -78,41 +78,7 @@ La carpeta se crea automáticamente cuando es necesaria.
 
 ---
 
-# 4. Entorno de Python
-
-El proyecto utiliza un entorno Conda independiente:
-
-```text
-transcriptor_proj
-```
-
-La versión de Python utilizada en el entorno es:
-
-```text
-Python 3.11.16
-```
-
-Esto permite mantener separadas las dependencias del proyecto respecto al Python global del sistema.
-
-La estructura conceptual es:
-
-```text
-Windows
-   │
-   └── Miniconda
-         │
-         └── transcriptor_proj
-                │
-                ├── Python 3.11
-                ├── Whisper
-                ├── PyTorch
-                ├── FFmpeg
-                └── Jupyter
-```
-
----
-
-# 5. PyTorch y GPU AMD
+# 4. PyTorch y GPU AMD
 
 Una parte importante del proyecto es utilizar la GPU AMD en lugar de realizar toda la transcripción mediante CPU.
 
@@ -120,7 +86,7 @@ Aunque el hardware es AMD, PyTorch utiliza la interfaz compatible denominada `cu
 
 ---
 
-# 6. FFmpeg
+# 5. FFmpeg
 
 Whisper necesita FFmpeg para trabajar con los diferentes formatos de audio.
 
@@ -138,7 +104,7 @@ ffmpeg-win-x86_64-v7.1.exe
 
 ---
 
-## 6.1. Problema encontrado con FFmpeg
+## 5.1. Problema encontrado con FFmpeg
 
 Durante las primeras pruebas apareció un problema relacionado con la localización de FFmpeg.
 
@@ -160,7 +126,7 @@ Por tanto, al quedar correctamente configurado `ffmpeg.exe` dentro del entorno, 
 
 ---
 
-# 7. Carga del modelo
+# 6. Carga del modelo
 
 El modelo utilizado actualmente es:
 
@@ -187,8 +153,7 @@ Una vez descargado, el modelo queda disponible para posteriores ejecuciones.
 
 ---
 
-
-# 8. Transcripción en español
+# 7. Transcripción en español
 
 Los audios utilizados en el proyecto son principalmente en español.
 
@@ -199,7 +164,7 @@ language="es"
 ```
 ---
 
-# 9. Procesamiento de múltiples audios
+# 8. Procesamiento de múltiples audios
 
 Una de las mejoras importantes respecto al flujo original en Colab fue pasar de procesar un archivo cada vez a procesar automáticamente todos los archivos disponibles.
 
@@ -209,7 +174,7 @@ Esto permite añadir nuevos audios a `audios/` sin tener que escribir una nueva 
 
 ---
 
-# 10. Privacidad
+# 9. Privacidad
 
 Una de las ventajas del enfoque local es que los archivos de audio pueden procesarse directamente en el ordenador.
 
@@ -220,7 +185,7 @@ El proyecto, por tanto, permite separar el procesamiento de audio de servicios e
 ---
 
 
-# 11. Estado actual del proyecto
+# 10. Estado actual del proyecto
 
 ### Implementado
 

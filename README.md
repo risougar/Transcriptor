@@ -22,8 +22,6 @@ Actualmente el proyecto permite:
 
 El objetivo principal es construir un **transcriptor local y reutilizable de archivos de audio** basado en Whisper.
 
-El proyecto comenzó a partir de un flujo de trabajo utilizado en Google Colab.
-
 Una de las ventajas principales es que el procesamiento se realiza en el propio ordenador, evitando tener que cargar cada audio manualmente en Google Colab.
 
 ---
